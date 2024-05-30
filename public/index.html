@@ -1,110 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Small-Cap Token Analysis Submission</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <div class="container">
-      <h1>Small-Cap Token Analysis Submission</h1>
-      <form id="tokenForm">
-        <div class="form-group">
-          <label for="tokenName">Token Name</label>
-          <input type="text" id="tokenName" name="tokenName" required />
-        </div>
-        <div class="form-group">
-          <label for="tokenSymbol">Token Symbol</label>
-          <input type="text" id="tokenSymbol" name="tokenSymbol" required />
-        </div>
-        <div class="form-group">
-          <label for="websiteUrl">Website URL</label>
-          <input type="url" id="websiteUrl" name="websiteUrl" />
-        </div>
-        <div class="form-group">
-          <label for="teamBackground">Team Background</label>
-          <textarea
-            id="teamBackground"
-            name="teamBackground"
-            required
-          ></textarea>
-        </div>
-        <div class="form-group">
-          <label for="whitepaperQuality">Whitepaper Quality</label>
-          <textarea
-            id="whitepaperQuality"
-            name="whitepaperQuality"
-            required
-          ></textarea>
-        </div>
-        <div class="form-group">
-          <label for="tokenomics">Tokenomics</label>
-          <textarea id="tokenomics" name="tokenomics" required></textarea>
-        </div>
-        <div class="form-group">
-          <label for="technology">Technology</label>
-          <select id="technology" name="technology" required>
-            <option value="Existing blockchain">Existing blockchain</option>
-            <option value="New blockchain">New blockchain</option>
-            <option value="Layer 2 solution">Layer 2 solution</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="communityMarketing">Community and Marketing</label>
-          <textarea
-            id="communityMarketing"
-            name="communityMarketing"
-            required
-          ></textarea>
-        </div>
-        <div class="form-group">
-          <label for="roadmapMilestones">Roadmap and Milestones</label>
-          <textarea
-            id="roadmapMilestones"
-            name="roadmapMilestones"
-            required
-          ></textarea>
-        </div>
-        <div class="form-group">
-          <label for="defi">DeFi Focus</label>
-          <select id="defi" name="defi" required>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-            <option value="Planned">Planned</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="nfts">NFTs Focus</label>
-          <select id="nfts" name="nfts" required>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-            <option value="Planned">Planned</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="gaming">Gaming Focus</label>
-          <select id="gaming" name="gaming" required>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-            <option value="Planned">Planned</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="other">Other Focus</label>
-          <input type="text" id="other" name="other" />
-        </div>
-        <div class="form-group">
-          <label for="additionalInfo">Additional Information</label>
-          <textarea id="additionalInfo" name="additionalInfo"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="email">Email for Report</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+        <h1>Small-Cap Token Analysis Submission</h1>
+        <form id="tokenAnalysisForm">
+            <div class="form-section">
+                <h2>Project Identification</h2>
+                <div class="form-group">
+                    <label for="tokenName">Token Name</label>
+                    <input type="text" id="tokenName" name="tokenName" required>
+                </div>
+                <div class="form-group">
+                    <label for="tokenSymbol">Token Symbol</label>
+                    <input type="text" id="tokenSymbol" name="tokenSymbol" required>
+                </div>
+                <div class="form-group">
+                    <label for="websiteUrl">Website URL</label>
+                    <input type="url" id="websiteUrl" name="websiteUrl">
+                </div>
+            </div>
+            
+            <div class="form-section">
+                <h2>Project Fundamentals</h2>
+                <div class="form-group">
+                    <label for="teamBackground">Team Background</label>
+                    <textarea id="teamBackground" name="teamBackground" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="whitepaperQuality">Whitepaper Quality</label>
+                    <textarea id="whitepaperQuality" name="whitepaperQuality" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="tokenomics">Tokenomics</label>
+                    <textarea id="tokenomics" name="tokenomics" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="technology">Technology</label>
+                    <select id="technology" name="technology" required>
+                        <option value="">Select Technology</option>
+                        <option value="Existing blockchain">Existing blockchain</option>
+                        <option value="New blockchain">New blockchain</option>
+                        <option value="Layer 2 solution">Layer 2 solution</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="communityMarketing">Community and Marketing</label>
+                    <textarea id="communityMarketing" name="communityMarketing" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="roadmapMilestones">Roadmap and Milestones</label>
+                    <textarea id="roadmapMilestones" name="roadmapMilestones" rows="4" required></textarea>
+                </div>
+            </div>
+            
+            <div class="form-section">
+                <h2>Focus Areas</h2>
+                <div class="form-group">
+                    <label for="defi">DeFi</label>
+                    <select id="defi" name="defi" required>
+                        <option value="">Select Option</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Planned">Planned</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nfts">NFTs</label>
+                    <select id="nfts" name="nfts" required>
+                        <option value="">Select Option</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Planned">Planned</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="gaming">Gaming</label>
+                    <select id="gaming" name="gaming" required>
+                        <option value="">Select Option</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Planned">Planned</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="other">Other</label>
+                    <input type="text" id="other" name="other">
+                </div>
+            </div>
+            
+            <div class="form-section">
+                <h2>Additional Information</h2>
+                <div class="form-group">
+                    <label for="additionalInfo">Anything Else We Should Know?</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Contact Information</h2>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
     </div>
-    <script src="scripts.js"></script>
-  </body>
+    <script src="main.js"></script>
+</body>
 </html>
