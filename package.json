@@ -1,0 +1,19 @@
+{
+  "name": "token-analysis",
+  "version": "1.0.0",
+  "description": "A web application for small-cap token analysis using AI",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "git": "^0.1.5",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.9.13",
+    "openai": "^4.0.0"
+  }
+}

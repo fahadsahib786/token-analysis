@@ -1,0 +1,87 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply styles to the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for the form */
+.container {
+  background-color: #fff; /* White background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  max-width: 500px; /* Limit container width */
+  width: 90%; /* Take 90% width of the viewport */
+}
+
+/* Heading style */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color */
+}
+
+/* Form group style */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label style */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input and textarea style */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Select style */
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Button style */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Blue button color */
+  border: none;
+  border-radius: 5px;
+  color: #fff; /* White text color */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
